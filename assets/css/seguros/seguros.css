@@ -29,6 +29,7 @@
 .seguros__item span {
   grid-column: 2;
   display: block;
+  text-align: right;
 }
 
 .seguros__item ul {
@@ -36,6 +37,32 @@
   margin-bottom: 32px;
 }
 
+.seguros__item li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.seguros__item li + li {
+  margin-top: 20px;
+}
+
+.seguros__item li::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+  left: -21px;
+  position: absolute;
+}
+
 .seguros__item a {
   grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
+  }
 }

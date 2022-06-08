@@ -1,4 +1,4 @@
-.bicicletas__listas {
+.bicicletas__lista {
   padding-top: 60px;
   padding-bottom: 120px;
 }
@@ -59,6 +59,7 @@
 
 @media (max-width: 800px) {
   .bicicletas__lista {
+    padding-top: 30px;
     padding-bottom: 120px;
   }
   .bicicletas__lista ul {
